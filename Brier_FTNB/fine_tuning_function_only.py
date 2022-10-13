@@ -173,6 +173,7 @@ def FTNB(name_model,data_name,L_ini,eta,alpha,beta,epoch):
                 
                         s+=(c_predict==c_actuall)*1
                         domain.initialize()
+                    score=s/domain.get_number_of_cases()
                     
 
                 #Delete domain and data for memory
