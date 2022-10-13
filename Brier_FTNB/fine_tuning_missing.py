@@ -182,6 +182,7 @@ def BFTNB(name_model, data_name, L_ini, eta,epoch):
                 L_predict_total.append(L_predict)
                 
                 domain.initialize()
+             score = brier_multi(L_true_total, L_predict_total)
 
         #Delete domain and data for memory
         domain.delete()
